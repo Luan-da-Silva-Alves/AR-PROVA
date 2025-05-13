@@ -39,7 +39,7 @@ public class CarBehaviour : MonoBehaviour
 
     private void Update()
     {
-        var trackingPosition = Reticle.transform.position;
+        var trackingPosition = new Vector3(Reticle.transform.position.x, transform.position.y, Reticle.transform.position.z);
         if (Vector3.Distance(trackingPosition, transform.position) < 0.1)
         {
             return;

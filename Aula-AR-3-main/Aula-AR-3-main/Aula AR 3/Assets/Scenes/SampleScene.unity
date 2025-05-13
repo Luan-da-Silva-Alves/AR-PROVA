@@ -170,7 +170,7 @@ MonoBehaviour:
   - {fileID: 1011373775253534, guid: cac530be51fa614458a02884bfe6e5bf, type: 3}
   - {fileID: 1509186335040420, guid: e6d09f7bafade7b4c8b283d037f37cf6, type: 3}
   - {fileID: 1856854601013476, guid: 8e885bf6d3dd0cb4e8c89899b98fa1ba, type: 3}
-  fakeBeha: {fileID: 0}
+  obs: {fileID: 0}
   obstaculo: {fileID: 8933749797280981253, guid: 46e654c102087004988f6462e5ae7133, type: 3}
 --- !u!1 &99117141
 GameObject:
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74f2e7dc86ac4a77899d283f1191ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CarPrefab: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+  CarPrefab: {fileID: 8416971370219110332, guid: 9051477b658334c49ad46bc3a438ae61, type: 3}
   Reticle: {fileID: 314500567}
   DrivingSurfaceManager: {fileID: 1389079928}
   Car: {fileID: 0}

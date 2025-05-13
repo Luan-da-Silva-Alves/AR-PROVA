@@ -95,7 +95,7 @@ public class PackageSpawner : MonoBehaviour
         var lockedPlane = DrivingSurfaceManager.LockedPlane;
         if (lockedPlane != null)
         {
-            if (Package == null || obs == null) 
+            if (Package == null) 
             {
                 SpawnPackage(lockedPlane);
                 SpawnObstaculo(lockedPlane);
