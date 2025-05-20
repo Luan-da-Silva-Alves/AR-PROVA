@@ -29,27 +29,43 @@ public class CarBehaviour : MonoBehaviour
 
     public int pontos = 0;
     public TextMeshProUGUI pontosTxt;
-    
+
+    public TextMeshProUGUI arosTxt;
+    public int qtdAros = 0;
+
+    public TextMeshProUGUI caixasTxt;
+    public int qtdCaixas = 0;
 
     private void Awake()
     {
         pontosTxt = GameObject.Find("Pontostxt").GetComponent<TextMeshProUGUI>();
         pontosTxt.text = "Pontos: " + pontos.ToString();
+        arosTxt = GameObject.Find("ArosTxt").GetComponent<TextMeshProUGUI>();
+        caixasTxt = GameObject.Find("CaixasTxt").GetComponent<TextMeshProUGUI>();
     }
 
     private void Update()
     {
+        if (pontos >= 250)
+            {
+                pontos = 250;
+                
+                SceneManager.LoadScene("Vitoria");
+            }
         var trackingPosition = new Vector3(Reticle.transform.position.x, transform.position.y, Reticle.transform.position.z);
         if (Vector3.Distance(trackingPosition, transform.position) < 0.1)
         {
             return;
         }
 
+
         var lookRotation = Quaternion.LookRotation(trackingPosition - transform.position);
         transform.rotation =
             Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * 10f);
         transform.position =
             Vector3.MoveTowards(transform.position, trackingPosition, Speed * Time.deltaTime);
+
+        pontosTxt.text = "Pontos: " + pontos.ToString();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -73,25 +89,29 @@ public class CarBehaviour : MonoBehaviour
             {
                 pontos += 40;
             }
-            Debug.Log(Package.gameObject.name + " TxtPontos: " + pontos);
-            pontosTxt.text = "Pontos: " + pontos.ToString();
+            //Debug.Log(Package.gameObject.name + " TxtPontos: " + pontos);
+            //pontosTxt.text = "Pontos: " + pontos.ToString();
             Destroy(other.gameObject);
-            if (pontos >= 100)
+            
+             if (Package.gameObject.CompareTag("Inimigo"))
             {
-                pontos = 100;
-                
-                SceneManager.LoadScene("Vitoria");
-            }
-            else if (Package.gameObject.CompareTag("obstaculo"))
-            {
+                Debug.Log("Bateu no outro aviao");
 
                 SceneManager.LoadScene("Derrota");
-
 
                 //Destroy(Package.gameObject);
                 Destroy(gameObject);
 
             }
+            else if (other.gameObject.CompareTag("Aro"))
+            {
+                pontos += 25;
+                qtdAros++;
+                arosTxt.text = "Aros atravessados: " + qtdAros.ToString();
+                Debug.Log("passou pelo aro");
+            }
         }
     }
+
+    
 }

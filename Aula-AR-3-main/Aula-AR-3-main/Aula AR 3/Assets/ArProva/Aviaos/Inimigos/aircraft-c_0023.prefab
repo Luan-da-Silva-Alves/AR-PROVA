@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 7943682420292438578}
   - component: {fileID: 6454355938899182999}
   - component: {fileID: 9112626813176394077}
+  - component: {fileID: 206244331822322035}
+  - component: {fileID: 7842877160132908835}
+  - component: {fileID: -7920916061396468155}
   m_Layer: 0
-  m_Name: aircraft-c_002
-  m_TagString: Untagged
+  m_Name: aircraft-c_0023
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.00011506523, y: -0.003403656, z: -0.0079911575, w: 0.9999623}
   m_LocalPosition: {x: -0.00043138964, y: 0.00000763312, z: 0.0000029597431}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3270103231718079146}
@@ -88,6 +91,55 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &206244331822322035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7311156108032970888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33a45fec2d3c485fae0f1e4b207b054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7842877160132908835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7311156108032970888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f91e401c84976d4489a9518391a7acdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 100008, guid: fafeb973cad62304ba2abdc5dfafbf8f, type: 3}
+  points: []
+  speed: 0.6
+  targetPoint: 0
+--- !u!65 &-7920916061396468155
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7311156108032970888}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.84373, y: 4.9540925, z: 15.287679}
+  m_Center: {x: 0.21101385, y: 0.1924413, z: -0.18194568}
 --- !u!1001 &7026223859607753330
 PrefabInstance:
   m_ObjectHideFlags: 0
