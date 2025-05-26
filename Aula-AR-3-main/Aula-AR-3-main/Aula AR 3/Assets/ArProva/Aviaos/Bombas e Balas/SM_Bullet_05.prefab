@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 380611056441782464}
   - component: {fileID: 851769570502285748}
   - component: {fileID: 1261608332215308944}
-  - component: {fileID: -6775789057656868151}
+  - component: {fileID: -8640151257821731831}
   m_Layer: 0
   m_Name: SM_Bullet_05
   m_TagString: Untagged
@@ -83,7 +83,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.738955, y: 0.7403606, z: 1.0079145}
   m_Center: {x: 0.0040351152, y: 0.045522824, z: -0.0039572716}
---- !u!114 &-6775789057656868151
+--- !u!114 &-8640151257821731831
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 10
-  explosionEffect: {fileID: 100008, guid: fafeb973cad62304ba2abdc5dfafbf8f, type: 3}
+  explosionEffect: {fileID: 100006, guid: a2b9ce854d0a5004cba27ab45cbfe205, type: 3}
 --- !u!1 &3585594593242577515
 GameObject:
   m_ObjectHideFlags: 0

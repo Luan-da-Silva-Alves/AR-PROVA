@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BalaController2 : MonoBehaviour
+public class BalaController : MonoBehaviour
 {
     private Rigidbody fis;
     public float velocidade;
@@ -29,7 +29,7 @@ public class BalaController2 : MonoBehaviour
         {
             Instantiate(explosionEffect, transform.position, transform.rotation);
             Debug.Log("Atingiu o aviao inimigo");
-            CarBehaviour car = GameObject.Find("Aviao1(Clone)").GetComponent<CarBehaviour>();
+            CarBehaviour car = GameObject.Find("Aviao2(Clone)").GetComponent<CarBehaviour>();
             car.pontos += 50;
             Destroy(other.gameObject);
             Destroy(gameObject);

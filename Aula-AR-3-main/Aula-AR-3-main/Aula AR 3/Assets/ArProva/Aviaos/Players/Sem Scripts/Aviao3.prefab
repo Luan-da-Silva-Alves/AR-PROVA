@@ -42,12 +42,8 @@ GameObject:
   - component: {fileID: 3385494709244798648}
   - component: {fileID: 1825200389491730717}
   - component: {fileID: 4517283447158332887}
-  - component: {fileID: 3113318751005784857}
-  - component: {fileID: -34166253599232937}
-  - component: {fileID: 109389535464222983}
-  - component: {fileID: 5825823520291679679}
   m_Layer: 0
-  m_Name: aircraft-f
+  m_Name: Aviao3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,8 +58,8 @@ Transform:
   m_GameObject: {fileID: 2715777419715836930}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2792147880279201078}
@@ -125,90 +121,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3113318751005784857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2715777419715836930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3cac13cd9a07cd44bf6fb90b11ae2ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  armaFrente: {fileID: 259049273679517339, guid: 0ab2b86c6314088469f3f12e2426a27d, type: 3}
-  balaPrefab: {fileID: 2989000923634411228, guid: 44cdcd55c8562cc46b31e272eb09fc5b, type: 3}
-  bombaSpawn: {fileID: 6602078178546892483, guid: 0ab2b86c6314088469f3f12e2426a27d, type: 3}
-  bombaPrefab: {fileID: 474175007933319629, guid: 6c88a2d7032886d4b8e46448bdbf44b7, type: 3}
---- !u!114 &-34166253599232937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2715777419715836930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 978733870de3b41f3a19e5d285592bc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Reticle: {fileID: 0}
-  Speed: 1.2
-  pontos: 0
-  pontosTxt: {fileID: 0}
-  arosTxt: {fileID: 0}
-  qtdAros: 0
-  caixasTxt: {fileID: 0}
-  qtdCaixas: 0
---- !u!65 &109389535464222983
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2715777419715836930}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6.3553357, y: 2.2391508, z: 11.674797}
-  m_Center: {x: 0.32688856, y: 0.16141944, z: 1.4786944}
---- !u!54 &5825823520291679679
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2715777419715836930}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &7803520287981196537
 GameObject:
   m_ObjectHideFlags: 0

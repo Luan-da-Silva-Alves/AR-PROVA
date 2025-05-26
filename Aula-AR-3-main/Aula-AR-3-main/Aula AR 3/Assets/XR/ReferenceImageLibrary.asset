@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5406289691376268768
+  m_GuidHigh: 2066924187833132680
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5219797327420453506
+      m_GuidHigh: 18083473350385733270
+    m_SerializedTextureGuid:
+      m_GuidLow: 11611537923709388072
+      m_GuidHigh: 9700377574438031528
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Aviao1
+    m_Texture: {fileID: 2800000, guid: 96acc5287838a124a8508b5702aa9e86, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5287601040506790668
+      m_GuidHigh: 5994338104075320194
+    m_SerializedTextureGuid:
+      m_GuidLow: 17880554801522137257
+      m_GuidHigh: 5258585404527837178
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Aviao2
+    m_Texture: {fileID: 2800000, guid: 53a1d8a97ddbf824fa7fef71903ffa48, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4901083767689770868
+      m_GuidHigh: 14824814965359195520
+    m_SerializedTextureGuid:
+      m_GuidLow: 7846660478865961663
+      m_GuidHigh: 1233132815211309449
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Aviao3
+    m_Texture: {fileID: 2800000, guid: d3e6f2bff0216ce489298c13c3f71c11, type: 3}

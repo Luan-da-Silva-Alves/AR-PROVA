@@ -11,8 +11,15 @@ public class Atirar : MonoBehaviour
     public GameObject bombaSpawn;
     public GameObject bombaPrefab;
 
+    public AudioSource BombaFalling;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
+    {
+        EncontrarBotoes();
+    }
+
+    public void EncontrarBotoes()
     {
         Button btnAtirar = GameObject.Find("BtnAtirar").GetComponent<Button>();
         btnAtirar.onClick.AddListener(Disparar);
@@ -37,5 +44,6 @@ public class Atirar : MonoBehaviour
     {
         var bomba = Instantiate(bombaPrefab, bombaSpawn.transform.position, bombaSpawn.transform.rotation);
         Destroy(bomba, 3f);
+        BombaFalling.Play();
     }
 }

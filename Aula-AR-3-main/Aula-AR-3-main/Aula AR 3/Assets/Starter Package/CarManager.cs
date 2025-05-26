@@ -31,10 +31,20 @@ public class CarManager : MonoBehaviour
 
     public CarBehaviour Car;
 
+    public ChoosePlane choosePlane;
+
+    private void Start()
+    {
+        choosePlane = GameObject.Find("ChoosePlane").GetComponent<ChoosePlane>();
+    }
+
     private void Update()
     {
-        if (Car == null && WasTapped() && Reticle.CurrentPlane != null)
+        if (Car == null && WasTapped() && Reticle.CurrentPlane != null && choosePlane.canStart)
         {
+            if (choosePlane != null)
+                CarPrefab = choosePlane.plane;
+
             // Spawn our car at the reticle location.
             var obj = GameObject.Instantiate(CarPrefab);
             Car = obj.GetComponent<CarBehaviour>();

@@ -38,6 +38,11 @@ public class CarBehaviour : MonoBehaviour
 
     private void Awake()
     {
+        AssinarUI();
+    }
+
+    public void AssinarUI()
+    {
         pontosTxt = GameObject.Find("Pontostxt").GetComponent<TextMeshProUGUI>();
         pontosTxt.text = "Pontos: " + pontos.ToString();
         arosTxt = GameObject.Find("ArosTxt").GetComponent<TextMeshProUGUI>();
@@ -46,18 +51,13 @@ public class CarBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (pontos >= 250)
-            {
-                pontos = 250;
-                
-                SceneManager.LoadScene("Vitoria");
-            }
+        
+
         var trackingPosition = new Vector3(Reticle.transform.position.x, transform.position.y, Reticle.transform.position.z);
         if (Vector3.Distance(trackingPosition, transform.position) < 0.1)
         {
             return;
         }
-
 
         var lookRotation = Quaternion.LookRotation(trackingPosition - transform.position);
         transform.rotation =
@@ -92,8 +92,13 @@ public class CarBehaviour : MonoBehaviour
             //Debug.Log(Package.gameObject.name + " TxtPontos: " + pontos);
             //pontosTxt.text = "Pontos: " + pontos.ToString();
             Destroy(other.gameObject);
-            
-             if (Package.gameObject.CompareTag("Inimigo"))
+            if (pontos >= 250)
+            {
+                pontos = 250;
+                
+                SceneManager.LoadScene("Vitoria");
+            }
+            else if (Package.gameObject.CompareTag("Inimigo"))
             {
                 Debug.Log("Bateu no outro aviao");
 

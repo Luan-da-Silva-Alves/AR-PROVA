@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BombaController : MonoBehaviour
+public class BombaController3 : MonoBehaviour
 {
     public GameObject explosionEffect;
     public AudioSource BombaCaindo;
@@ -23,7 +23,7 @@ public class BombaController : MonoBehaviour
         {
             Instantiate(explosionEffect, transform.position, transform.rotation);
             Debug.Log("Bomba colidiu com a caixa");
-            CarBehaviour car = GameObject.Find("Aviao1(Clone)").GetComponent<CarBehaviour>();
+            CarBehaviour car = GameObject.Find("Aviao2(Clone)").GetComponent<CarBehaviour>();
             car.pontos += 25;
 
             car.qtdCaixas++;
