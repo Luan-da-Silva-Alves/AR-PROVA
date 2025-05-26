@@ -21,29 +21,29 @@ MonoBehaviour:
       m_GuidLow: 5219797327420453506
       m_GuidHigh: 18083473350385733270
     m_SerializedTextureGuid:
-      m_GuidLow: 11611537923709388072
-      m_GuidHigh: 9700377574438031528
+      m_GuidLow: 11530522348249014498
+      m_GuidHigh: 6376371491313969305
     m_Size: {x: 0, y: 0}
     m_SpecifySize: 0
     m_Name: Aviao1
-    m_Texture: {fileID: 2800000, guid: 96acc5287838a124a8508b5702aa9e86, type: 3}
+    m_Texture: {fileID: 2800000, guid: 0215e0e2a4fca0049968b27f166c7d58, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5287601040506790668
       m_GuidHigh: 5994338104075320194
     m_SerializedTextureGuid:
-      m_GuidLow: 17880554801522137257
-      m_GuidHigh: 5258585404527837178
+      m_GuidLow: 5756938632624658049
+      m_GuidHigh: 4125332032314449306
     m_Size: {x: 0, y: 0}
     m_SpecifySize: 0
     m_Name: Aviao2
-    m_Texture: {fileID: 2800000, guid: 53a1d8a97ddbf824fa7fef71903ffa48, type: 3}
+    m_Texture: {fileID: 2800000, guid: 4f50d681c12f4fe49a9da45ea01f4039, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 4901083767689770868
       m_GuidHigh: 14824814965359195520
     m_SerializedTextureGuid:
-      m_GuidLow: 7846660478865961663
-      m_GuidHigh: 1233132815211309449
+      m_GuidLow: 7058543844904620657
+      m_GuidHigh: 3412618579494232714
     m_Size: {x: 0, y: 0}
     m_SpecifySize: 0
     m_Name: Aviao3
-    m_Texture: {fileID: 2800000, guid: d3e6f2bff0216ce489298c13c3f71c11, type: 3}
+    m_Texture: {fileID: 2800000, guid: ab0f5271fc3a61f48ae2a668840e5c2f, type: 3}
