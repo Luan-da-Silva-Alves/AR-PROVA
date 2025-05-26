@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: -7973838728351678224}
   - component: {fileID: 736650369971240672}
   m_Layer: 0
-  m_Name: Aviao2
+  m_Name: Aviao22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

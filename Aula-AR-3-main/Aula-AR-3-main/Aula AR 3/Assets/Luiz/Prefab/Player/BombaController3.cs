@@ -23,7 +23,7 @@ public class BombaController3 : MonoBehaviour
         {
             Instantiate(explosionEffect, transform.position, transform.rotation);
             Debug.Log("Bomba colidiu com a caixa");
-            CarBehaviour car = GameObject.Find("Aviao2(Clone)").GetComponent<CarBehaviour>();
+            CarBehaviour car = GameObject.Find("Aviao22(Clone)").GetComponent<CarBehaviour>();
             car.pontos += 25;
 
             car.qtdCaixas++;

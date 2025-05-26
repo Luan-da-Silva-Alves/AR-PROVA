@@ -29,7 +29,7 @@ public class BalaController3 : MonoBehaviour
         {
             Instantiate(explosionEffect, transform.position, transform.rotation);
             Debug.Log("Atingiu o aviao inimigo");
-            CarBehaviour car = GameObject.Find("Aviao3(Clone)").GetComponent<CarBehaviour>();
+            CarBehaviour car = GameObject.Find("Aviao33(Clone)").GetComponent<CarBehaviour>();
             car.pontos += 50;
             Destroy(other.gameObject);
             Destroy(gameObject);
